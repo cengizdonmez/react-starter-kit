@@ -1,25 +1,24 @@
 import logo from './logo.svg';
-import './App.css';
-
 import './tailwind.css'
 
 function App() {
+
+  const todos = ['Learn React', 'Learn Tailwind', 'Build a todo app']
+
   return (
-    <div className="App">
+    <div className="App bg-slate-800 h-screen">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p className='bg-blue-500 hover:bg-green-400 transition'>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img src={logo} className="App-logo w-72 mx-auto" alt="logo" />
       </header>
+      <main className="App-main">
+        <div className="md:container mx-auto text-white">
+            <ul>
+              {todos.map(todo => (
+                <li key={todo}>{todo}</li>
+              ))}
+            </ul>
+        </div>
+      </main>
     </div>
   );
 }
