@@ -1,11 +1,11 @@
 import './tailwind.css'
-import UseStateExp from './example/UseStateExp.js'
+import OutputtingListsExp from './example/OutputtingListsExp.js'
 
 function App() {
 
   return (
     <div className="app">
-      <UseStateExp />
+      <OutputtingListsExp />
     </div>
   );
 }
