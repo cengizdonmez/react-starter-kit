@@ -1,7 +1,7 @@
 const BlogList = ({blogs, title}) => {
 
   return (
-    <div className="blog-list">
+    <div className="blog-list mb-12">
       <h2 className="text-xl">{title}</h2>
        {blogs.map((blog) => (
         <div className="flex-1 truncate py-3 transition-all hover:bg-slate-200" key={blog.id}>
