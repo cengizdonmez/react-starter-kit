@@ -8,10 +8,14 @@ const OutputtingListsExp = () => {
     { title:'React', subtitle:'React is a JavaScript library for building user interfaces', author:'Cengiz', id: 3 },
   ]);
 
+  const handleDelete = (id) => {
+    const newBlogs = blogs.filter((blog) => blog.id !== id);
+    setBlogs(newBlogs);
+  }
+
   return (
     <div>
-       <BlogList blogs={blogs} title="All Blogs"/>
-       <BlogList blogs={blogs.filter((blog) => blog.author === 'Cengiz')} title="Cengiz's Blogs"/>
+       <BlogList blogs={blogs} title="All Blogs" handleDelete={handleDelete} />
     </div>
   )
 }
