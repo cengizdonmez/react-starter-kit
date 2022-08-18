@@ -6,7 +6,7 @@ const UseEffectExp = () => {
   useEffect(() => {
     //Component ilk yüklendiğinde çalışır.
     console.log("useEffect");
-  });
+  }, []); // [] => component tekrar çalışmaz.
 
   const increase = () => {
     setCounter(counter + 1);
