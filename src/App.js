@@ -1,10 +1,10 @@
 import "./tailwind.css";
-import ForwardRefExp from "./example/ForwardRefExp.js";
+import UseReducerExp from "./example/UseReducerExp.js";
 
 function App() {
   return (
     <div className="app bg-slate-800 text-white h-screen">
-      <ForwardRefExp />
+      <UseReducerExp />
     </div>
   );
 }
