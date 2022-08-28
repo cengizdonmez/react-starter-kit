@@ -1,11 +1,10 @@
-import './tailwind.css'
-import UseEffectExp from './example/UseEffectExp.js'
+import "./tailwind.css";
+import UseRefExp from "./example/UseRefExp.js";
 
 function App() {
-
   return (
-    <div className="app">
-      <UseEffectExp />
+    <div className="app bg-slate-800 text-white h-screen">
+      <UseRefExp />
     </div>
   );
 }
