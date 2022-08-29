@@ -1,4 +1,5 @@
 import { useReducer } from "react";
+import Header from '../components/Header'
 
 function reducer(state, action) {
   switch (action.type) {
@@ -17,6 +18,7 @@ function reducer(state, action) {
 }
 
 function UseReducerExp() {
+  console.log('render UseReducerExp');
   const [state, dispatch] = useReducer(reducer, {
     todos: [],
     todo: "",
@@ -38,6 +40,7 @@ function UseReducerExp() {
 
   return (
     <div>
+      <Header />
       <h1>Todo App</h1>
       <form onSubmit={submitHandle}>
         <input
