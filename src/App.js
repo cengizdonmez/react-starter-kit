@@ -1,11 +1,21 @@
 import './tailwind.css';
-import FormElementsExp from './example/FormElementsExp.js';
+import SiteContext from './context/SiteContext';
+import Home from './Home';
+
+import { useState } from 'react';
 
 function App() {
+  const [theme, setTheme] = useState('dark');
+
+  const data = {
+    theme,
+    setTheme,
+  };
+
   return (
-    <div className="app bg-slate-800 text-white h-full py-10">
-      <FormElementsExp />
-    </div>
+    <SiteContext.Provider value={data} className="app">
+      <Home />
+    </SiteContext.Provider>
   );
 }
 
