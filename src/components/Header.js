@@ -1,10 +1,9 @@
 import { memo } from 'react';
-function Header() {
-  console.log('render Header'); 
+function ComponentName() {
   return (
-    <header>
-      <h1>Header</h1>
-    </header>
+    <div>
+      <h1>React</h1>
+    </div>
   );
 }
-export default memo(Header);
+export default memo(ComponentName);
