@@ -1,9 +1,8 @@
 import SwitchTheme from '../SwitchTheme';
-import { useContext } from 'react';
-import SiteContext from '../context/SiteContext';
+import { useSite } from '../context/SiteContext';
 
 export default function Footer() {
-  const { theme } = useContext(SiteContext);
+  const { theme } = useSite();
 
   return (
     <footer
